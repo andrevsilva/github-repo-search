@@ -7,7 +7,7 @@ export function Header() {
     <header className={styles.header}>
       {/* Icon container: displays app banner image */}
       <div className={styles.icon}>
-        <img src='/public/banner.png' alt='GitHub Icon' />
+        <img src='/banner.png' alt='GitHub Icon' />
       </div>
     </header>
   );
