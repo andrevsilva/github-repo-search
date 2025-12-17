@@ -1,0 +1,71 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 650px;
+  max-height: 90vh;
+  overflow: auto;
+  padding: 16px;
+}
+
+.modalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.modalBody {
+  padding-top: 8px;
+}
+
+.modalBody img {
+  display: block;
+  margin: 0 auto 12px auto;
+  width: min(320px, 60%);
+  max-width: 100%;
+  max-height: 40vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.modalBody p {
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+.modalBody button {
+  display: block;
+  margin: 14px auto 0 auto;
+  padding: 8px 12px;
+  background: linear-gradient(45deg, #52227e, #872293);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 700;
+}
